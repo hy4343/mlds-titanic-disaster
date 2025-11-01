@@ -1,1 +1,24 @@
+# Base image with R
+FROM r-base:4.4.0
 
+# Set working directory inside the container
+WORKDIR /workspace
+
+# Install common system dependencies for R packages
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libssl-dev \
+    libcurl4-openssl-dev \
+    libxml2-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the R package installer (cached separately for efficiency)
+COPY install_packages.R ./install_packages.R
+
+# Install required R libraries
+RUN Rscript install_packages.R
+
+# Copy the rest of the project files into the container
+COPY . .
+
+# Define the default command to execute your R analysis
+ENTRYPOINT ["Rscript", "src/R_code/main.R"]
