@@ -121,12 +121,6 @@ plt.title("Feature Correlation — Titanic Dataset")
 plt.show()
 ```
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ageron/handson-ml2/master/images/titanic_corr_heatmap.png" width="500"/>
-</p>
-
----
-
 ## 📊 4. Run with R (Docker)
 
 ### 📁 Folder: `src/r_model/`
