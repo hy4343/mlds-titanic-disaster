@@ -1,4 +1,4 @@
-# 🧭 Titanic Logistic Regression — Part 3
+# 🧭 Titanic Logistic Regression 
 
 This project implements a **logistic regression model** to predict passenger survival on the **Titanic dataset**.  
 It is designed as Part 3 of the MLDS course homework and demonstrates data preprocessing, model training, and Docker containerization.
