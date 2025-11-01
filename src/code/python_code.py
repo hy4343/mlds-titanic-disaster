@@ -99,8 +99,8 @@ def predict_and_export(model, test_df: pd.DataFrame, passenger_ids, output_path:
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     output_df.to_csv(output_path, index=False)
-    print(f"📁 Predictions saved to: {output_path}")
-    print(f"🔢 Total predictions: {len(preds)} | Survived=1: {(preds == 1).sum()}")
+    print(f"Predictions saved to: {output_path}")
+    print(f"Total predictions: {len(preds)} | Survived=1: {(preds == 1).sum()}")
 
 
 # =========================================================
