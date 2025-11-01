@@ -7,19 +7,15 @@ It is designed as Part 3 of the MLDS course homework and demonstrates data prepr
 
 ## 📁 Project Structure
 
-mlds-titanic-disaster/
-│
-├── src/
-│ ├── code/
-│ │ └── main.py # Main Python script for Part 3
-│ ├── data/
-│ │ ├── train.csv # Training dataset
-│ │ ├── test.csv # Test dataset
-│ │ └── gender_submission.csv # Baseline Kaggle submission file
-│ └── requirements.txt # Python dependencies
-│
-├── Dockerfile # Docker configuration
-└── README.md # Project documentation
+# 🛳️ MLDS Titanic Disaster Prediction
+
+A data science project for predicting passenger survival on the Titanic using machine learning techniques.  
+This project follows the classic [Kaggle Titanic dataset](https://www.kaggle.com/competitions/titanic) and is organized for clarity, reproducibility, and containerization.
+
+---
+
+## 📁 Project Structure
+
 
 
 ---
