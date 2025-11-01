@@ -1,9 +1,5 @@
 """
-Titanic Survival Prediction - python code part
-==============================================
-
-This script processes Titanic datasets, builds a logistic regression model, 
-and outputs survival predictions for the test set. 
+Titanic Survival Prediction - python code version
 """
 
 import os
