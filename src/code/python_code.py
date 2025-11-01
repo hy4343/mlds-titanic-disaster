@@ -1,15 +1,9 @@
 """
-Titanic Survival Prediction (Enhanced Version)
+Titanic Survival Prediction - python code part
 ==============================================
 
-This python code part processes Titanic datasets, builds a logistic regression model, 
-and outputs survival predictions for the test set.
-
-Differences from other versions:
-- Uses modular pipeline-style functions
-- Adds structured logging and configuration summary
-- Combines manual and automated preprocessing steps
-- Retains StandardScaler normalization and one-hot encoding consistency
+This script processes Titanic datasets, builds a logistic regression model, 
+and outputs survival predictions for the test set. 
 """
 
 import os
@@ -88,7 +82,7 @@ def train_model(train_df: pd.DataFrame):
 
     y_pred = model.predict(X)
     acc = accuracy_score(y, y_pred)
-    print(f"✅ Training Accuracy: {acc:.4f}")
+    print(f" Training Accuracy: {acc:.4f}")
     return model
 
 
@@ -150,7 +144,7 @@ def main():
 
 
 # =========================================================
-# Final Execution part
+# FINAL EXECUTION TO SEE THE OUTPUT
 # =========================================================
 if __name__ == "__main__":
     main()
