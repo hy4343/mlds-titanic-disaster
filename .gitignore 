@@ -1,0 +1,9 @@
+# produce the document automatically
+.DS_Store
+
+# Unnecessary to upload the document
+src/data/
+
+# Python virtual environment
+__pycache__/
+venv/
